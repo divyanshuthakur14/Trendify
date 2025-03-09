@@ -11,7 +11,7 @@ const LatestCollection = () => {
     if (products.length > 0) {
       setLatestProducts(products.slice(0, 10));
     }
-  }, [products]); // ✅ Added dependency so it updates when `products` is available
+  }, [products]);
 
   return (
     <div className="my-10">
